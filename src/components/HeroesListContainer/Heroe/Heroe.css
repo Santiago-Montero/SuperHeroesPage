@@ -1,0 +1,9 @@
+.heroe{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    height: 250px;
+    width: 220px;
+}
