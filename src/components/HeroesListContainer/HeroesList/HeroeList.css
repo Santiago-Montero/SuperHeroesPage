@@ -1,12 +1,7 @@
-.containerHeroes{
+.heroeList{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    background-color: blueviolet;
-}
-img{
-    width: 200px;
-    height: 200px;
-    border-radius: 20px;
+    margin: 20px;
 }

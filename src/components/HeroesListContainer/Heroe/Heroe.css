@@ -1,9 +1,67 @@
 .heroe{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 20px;
+}
+.heroeName{
+    position: relative;
+    height: 30px;
+    bottom:50px;
+    background: rgba( 6, 6, 6, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color:#FFFFFF;
+}
+.heroeName p{
+    text-align: center;
+}
+.heroeLink{
+    text-decoration: none;
+}
+.heroe img{
+    width: 250px;
+    height: 300px;
+    border-radius: 7px;
+    box-shadow: 0 7px 16px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 10%);
+}
+.heroeBtn{
+    border-radius: 7px;
+}
+.heroePowerStats{
+    margin: 10px;
+    width: 200px;
+    z-index: 1;
+    display: none;
+    position: absolute;
+    background: rgba(1, 1, 1, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    
+}
+.heroePowerStats p{
+    text-decoration: none;
+    color: #ffff;
+}
+.heroe:hover > .heroePowerStats{
+    display: block;
+    
+}
+.heroePowerStatsBtns{
+    display: flex;
+    flex-flow: row wrap;
     justify-content: space-around;
-    align-items: center;
-    border-radius: 20px;
-    height: 250px;
-    width: 220px;
+    
+}
+.detallesBtn{
+    text-decoration: none;
+}
+.detallesBtn p{
+    color:black;
+    
 }

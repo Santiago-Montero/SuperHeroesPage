@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-export const getHeroes = () => {
-    return axios.get(`https://www.superheroapi.com/api.php/4731758326855713/search/a`)
+export const getHeroes = (name) => {
+    return axios.get(`https://www.superheroapi.com/api.php/4731758326855713/search/${name}`)
 }
 
 

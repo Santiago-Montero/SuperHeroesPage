@@ -1,0 +1,23 @@
+#nombreHeore{
+    margin-left: 10px;
+    outline: none;
+    appearance: none;
+    border-radius: 7px;
+    box-shadow: 0 7px 16px 0 rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 10%);
+}
+.containerHeroesInput{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.heroesListContainer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.containerHeroes{
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+}

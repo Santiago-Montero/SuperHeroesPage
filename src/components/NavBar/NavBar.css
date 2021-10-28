@@ -1,0 +1,18 @@
+.nav{
+    background-color:  #72788A;
+}
+.item p{
+    color: white;
+    font-size: 20px;
+}
+
+.item button{
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: inherit;
+    color: white;
+    font-size: 20px;
+    background-color:  #72788A;
+}

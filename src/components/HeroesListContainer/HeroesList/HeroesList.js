@@ -5,7 +5,7 @@ function HeroesList({heroes}) {
 
     return(
         <>
-        <div className="containerHeroes">
+        <div className="heroeList">
             {heroes.map(heroe => <Heroe key={heroe.id} heroe={heroe}/> )}
         </div>
         </>

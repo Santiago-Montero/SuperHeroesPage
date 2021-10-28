@@ -1,0 +1,10 @@
+.notificacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.alerta b{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
