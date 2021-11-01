@@ -10,7 +10,7 @@ import NotificacionContext from '../../context/NotificacionContext';
 function Formulario() {
     const { singIn } = useContext(UserContext)
     const history = useHistory();
-    const host ='http://challenge-react.alkemy.org';
+    const host ='http://localhost:3001/usuario';
     const { setNotificacion } = useContext(NotificacionContext)
     
 	return (
@@ -30,15 +30,18 @@ function Formulario() {
                 })}
 
                 onSubmit={(valores, {resetForm})=>{
-                    
-                    axios.post(host, {email:valores.email, password:valores.password})
-                    .then(data => {
-                        const dataJSON = JSON.stringify(data, null ,2)
-                        singIn(dataJSON)
-                        localStorage.setItem('token', dataJSON)
-                        console.log(dataJSON)
-                        history.push("/home");
-                        setNotificacion('succes', `Bienvenido`)
+                    axios.get(host)
+                    .then(response => {
+                        if(response.data[0].email === valores.email && response.data[0].password === valores.password){
+                            const dataJSON = JSON.stringify(response, null ,2)
+                            singIn(dataJSON)
+                            localStorage.setItem('token', dataJSON)
+                            console.log(dataJSON)
+                            history.push("/home");
+                            setNotificacion('succes', `Bienvenido`)
+                        }else{
+                            setNotificacion('error', `Usuario No Registrado`)
+                        }
                     })
                     .catch(() => setNotificacion('error', `Usuario No Registrado`)) // alertar q no inicio
                     resetForm();
